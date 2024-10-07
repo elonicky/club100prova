@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Club Dashboard</title>
+    
+    <!-- Collegamento al file CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <ul>
+            <li><img src="user_image.jpg" alt="User Profile Picture"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Investments</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenuto principale -->
+    <main class="dashboard">
+        <header>
+            <h1>Hello MEMBER CLUB 1</h1>
+            <div class="actions">
+                <button>Nuovo Deposito</button>
+                <button>Dati Account</button>
+            </div>
+        </header>
+
+        <!-- Sezione delle informazioni (overview) -->
+        <section class="overview">
+            <div class="box">
+                <h2>Deposito Totale</h2>
+                <p>$250,000.00</p>
+            </div>
+            <div class="box">
+                <h2>APY</h2>
+                <p>36.2%</p>
+            </div>
+            <div class="box">
+                <h2>Capitale Generato</h2>
+                <p>$12,200.00</p>
+            </div>
+            <div class="box">
+                <h2>Prelievi Totali</h2>
+                <p>$45,000.00</p>
+            </div>
+        </section>
+
+        <!-- Sezione dei grafici -->
+        <section class="charts">
+            <div class="chart">
+                <h3>Breakdown</h3>
+                <canvas id="breakdownChart"></canvas>
+            </div>
+
+            <div class="chart">
+                <h3>Percentuali per Mese</h3>
+                <canvas id="percentualeMeseChart"></canvas>
+            </div>
+
+            <div class="chart">
+                <h3>Entrate per Quarter</h3>
+                <canvas id="entrateQuarterChart"></canvas>
+            </div>
+
+            <div class="chart">
+                <h3>Entrate per Mese</h3>
+                <canvas id="entrateMeseChart"></canvas>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Collegamento al file JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
